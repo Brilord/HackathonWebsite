@@ -1,13 +1,14 @@
 import React from 'react';
-import Navbar from '../../component/Navbar/Navbar'; // Adjust the path as necessary
-
+import ReactMarkdown from 'react-markdown';
+import { aboutMarkdown } from './aboutMarkdown'; // Import the Markdown content
 
 const AboutPage = () => {
   return (
     <div>
-        <Navbar/>
-      <h1>About Page</h1>
-      <p>This is the about page.</p>
+      <div style={{ padding: '20px' }}>
+        <h1>About Page</h1>
+        <ReactMarkdown>{aboutMarkdown}</ReactMarkdown>
+      </div>
     </div>
   );
 };
